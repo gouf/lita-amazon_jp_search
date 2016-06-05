@@ -4,6 +4,7 @@ module Lita
   module Handlers
     class AmazonJpSearch < Handler
       # insert handler code here
+      route(/^amazon\s(.+)/i, :search_amazon)
 
       Lita.register_handler(self)
     end
