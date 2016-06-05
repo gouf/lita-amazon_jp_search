@@ -1,3 +1,5 @@
+require 'mechanize/amazon_jp_search/client'
+
 module Lita
   module Handlers
     class AmazonJpSearch < Handler
