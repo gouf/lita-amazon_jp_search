@@ -21,6 +21,8 @@ module Lita
 
       private
 
+      # convert to comma seperated string
+      # 1000 => '1,000'
       def separated_digit(number)
         number.to_s
               .chars
