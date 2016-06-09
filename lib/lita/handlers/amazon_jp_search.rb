@@ -7,7 +7,7 @@ module Lita
 
       def search_amazon(response)
         client = Mechanize::AmazonJpSearch::Client.new(3)
-        query = response.matches.first.join(' ')
+        query = response.matches.map(&:join).join
 
         search_result = client.search(query)
 
